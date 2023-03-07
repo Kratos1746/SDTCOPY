@@ -138,4 +138,138 @@ const observer = new IntersectionObserver((entries, observer) => {
   
 	
 	
+document.querySelector('.card1').onclick =function toggleElements() {
+  var card1f = document.querySelector(".card1 .flip-card-front h4");
+  var card1b = document.querySelector(".card1 .flip-card-back h4");
 
+  if (card1f.style.display === "none") {
+    card1f.style.display = "block";
+    card1b.style.display = "none";
+  } else {
+    card1f.style.display = "none";
+    card1b.style.display = "block";
+  }
+}
+document.querySelector('.card2').onclick =function toggleElements() {
+  var card2f = document.querySelector(".card2 .flip-card-front h4");
+  var card2b = document.querySelector(".card2 .flip-card-back h4");
+
+  if (card2f.style.display === "none") {
+    card2f.style.display = "block";
+    card2b.style.display = "none";
+  } else {
+    card2f.style.display = "none";
+    card2b.style.display = "block";
+  }
+}
+document.querySelector('.card3').onclick =function toggleElements() {
+  var card3f = document.querySelector(".card3 .flip-card-front h4");
+  var card3b = document.querySelector(".card3 .flip-card-back h4");
+
+  if (card3f.style.display === "none") {
+    card3f.style.display = "block";
+    card3b.style.display = "none";
+  } else {
+    card3f.style.display = "none";
+    card3b.style.display = "block";
+  }
+}
+
+
+document.querySelector('.int4 .card1').onclick =function toggleElements() {
+  var  card14f = document.querySelector(".int4 .card1 .flip-card-front h4");
+  var  card14b = document.querySelector(".int4 .card1 .flip-card-back h4");
+
+  if  (card14f.style.display === "none") {
+     card14f.style.display = "block";
+     card14b.style.display = "none";
+  } else {
+     card14f.style.display = "none";
+     card14b.style.display = "block";
+  }
+}
+document.querySelector('.int4 .card2').onclick =function toggleElements() {
+  var  card24f = document.querySelector(".int4 .card2 .flip-card-front h4");
+  var  card24b = document.querySelector(".int4 .card2 .flip-card-back h4");
+
+  if  (card24f.style.display === "none") {
+     card24f.style.display = "block";
+     card24b.style.display = "none";
+  } else {
+     card24f.style.display = "none";
+     card24b.style.display = "block";
+  }
+}
+document.querySelector('.int4 .card3').onclick =function toggleElements() {
+  var  card34f = document.querySelector(".int4 .card3 .flip-card-front h4");
+  var  card34b = document.querySelector(".int4 .card3 .flip-card-back h4");
+
+  if  (card34f.style.display === "none") {
+     card34f.style.display = "block";
+     card34b.style.display = "none";
+  } else {
+     card34f.style.display = "none";
+     card34b.style.display = "block";
+  }
+}
+
+document.querySelector('.int6 .card1').onclick =function toggleElements() {
+  var  card16f = document.querySelector(".int6 .card1 .flip-card-front h4");
+  var  card16b = document.querySelector(".int6 .card1 .flip-card-back h4");
+
+  if  (card16f.style.display === "none") {
+     card16f.style.display = "block";
+     card16b.style.display = "none";
+  } else {
+     card16f.style.display = "none";
+     card16b.style.display = "block";
+  }
+}
+document.querySelector('.int6 .card2').onclick =function toggleElements() {
+  var  card26f = document.querySelector(".int6 .card2 .flip-card-front h4");
+  var  card26b = document.querySelector(".int6 .card2 .flip-card-back h4");
+
+  if  (card26f.style.display === "none") {
+     card26f.style.display = "block";
+     card26b.style.display = "none";
+  } else {
+     card26f.style.display = "none";
+     card26b.style.display = "block";
+  }
+}
+document.querySelector('.int6 .card3').onclick =function toggleElements() {
+  var  card36f = document.querySelector(".int6 .card3 .flip-card-front h4");
+  var  card36b = document.querySelector(".int6 .card3 .flip-card-back h4");
+
+  if  (card36f.style.display === "none") {
+     card36f.style.display = "block";
+     card36b.style.display = "none";
+  } else {
+     card36f.style.display = "none";
+     card36b.style.display = "block";
+  }
+}
+document.querySelector('.int6 .card4').onclick =function toggleElements() {
+  var  card46f = document.querySelector(".int6 .card4 .flip-card-front h4");
+  var  card46b = document.querySelector(".int6 .card4 .flip-card-back h4");
+
+  if  (card46f.style.display === "none") {
+     card46f.style.display = "block";
+     card46b.style.display = "none";
+  } else {
+     card46f.style.display = "none";
+     card46b.style.display = "block";
+  }
+}
+document.querySelector('.int6 .card5').onclick =function toggleElements() {
+  var  card56f = document.querySelector(".int6 .card5 .flip-card-front h4");
+  var  card56b = document.querySelector(".int6 .card5 .flip-card-back h4");
+
+  if  (card56f.style.display === "none") {
+     card56f.style.display = "block";
+     card56b.style.display = "none";
+  } else {
+     card56f.style.display = "none";
+     card56b.style.display = "block";
+  }
+}

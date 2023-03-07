@@ -25,6 +25,8 @@ html::-webkit-scrollbar-track{
   background-color: rgb(255, 255, 255);
 }
 
+
+
 .bg {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.664), rgba(105, 105, 105, 0.295)), url(img/foto1.jpg);
@@ -76,6 +78,8 @@ html::-webkit-scrollbar-track{
   font-size: 65px;
   line-height: 1.2;
   position: relative;
+  background-clip: text;
+  color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
@@ -516,8 +520,8 @@ html::-webkit-scrollbar-track{
         }
         
         .int1 .pspan {
-          font-size: 16px;
-          line-height: 22px;
+          font-size: 14px;
+          line-height: 20px;
         }
       }
 
@@ -530,7 +534,7 @@ html::-webkit-scrollbar-track{
   width: 90%;
   height: 100%;
   padding-top: 3%;
-  min-height: 850px;
+  min-height: 900px;
   max-height: 1200px;
   
   
@@ -565,19 +569,16 @@ html::-webkit-scrollbar-track{
 #pint2 {
   position: relative;
   bottom: -15%;
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 8%;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
   margin: 0 auto;
   background-size: cover;
+  background: #003264;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: fixed;
-  background-image: url('img/Cattura-black.PNG');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
+  -webkit-text-fill-color: transparent; 
   opacity: 0;     
         
 }
@@ -725,10 +726,7 @@ transition: 2s;
   transition: .5s ease-in-out;
 }
 
-.int2 .card1.visible{
-  transform: rotate3d(0, 1, 0, 360deg);
-  transition: 1s;
-}
+
 
 .card2{
   background-color: transparent;
@@ -738,10 +736,7 @@ transition: 2s;
   margin: 1%;
   transition: .5s ease-in-out;
 }
-.int2 .card2.visible{
-  transform: rotate3d(0, 5, 0, 360deg);
-  transition: 1s;
-}
+
  .card3{
   background-color: transparent;
   width: 100%;
@@ -749,12 +744,6 @@ transition: 2s;
   perspective: 1000px;
   margin: 1%;
   transition: .5s ease-in-out;
-}
-@media(min-width: 1080px ){
-.card3.visible{
-  transform: rotate3d(0, 5, 0, 360deg);
-  transition: 1s;
-}
 }
 
 
@@ -937,10 +926,7 @@ z-index: 1000;
   transition: .5s ease-in-out;
 }
 
-.int2 .card1.visible{
-  transform: rotate3d(0, 1, 0, 360deg);
-  transition: 1s;
-}
+
 
 .card2{
   background-color: transparent;
@@ -950,10 +936,7 @@ z-index: 1000;
   margin: 1%;
   transition: .5s ease-in-out;
 }
-.int2 .card2.visible{
-  transform: rotate3d(0, 5, 0, 360deg);
-  transition: 1s;
-}
+
  .card3{
   background-color: transparent;
   width: 100%;
@@ -1439,7 +1422,7 @@ iframe{
   width: 90%;
   padding-top: 3%;
   padding-bottom: 8%;
-  min-height: 850px;
+  min-height: 900px;
   max-height: 1200px;
   
 }
@@ -1589,17 +1572,6 @@ transition: 1.5s;
   scroll-snap-type: x mandatory;
 }
 
-.int4 .card1.visible{
-  transform: rotate3d(0, 1, 0, 360deg);
-  transition: 1s;
-}
-
-
-.int4 .card2.visible{
-  transform: rotate3d(0, 5, 0, 360deg);
-  transition: 1s;
-}
-
 
 
 .flip-card h4 {
@@ -1654,6 +1626,13 @@ transition: 1.5s;
   font-size: 26px;
   font-weight: 800;
   max-width: 230px;
+  z-index: 10;
+ opacity: 1;
+  
+}
+.flip-card-front.disabled h4{
+ z-index: -1;
+ opacity: 0;
   
 }
 
@@ -2002,7 +1981,7 @@ transition: 1.5s;
   width: 100%;
   height: auto;
   border-bottom: 1px solid rgb(73, 73, 73);
-  min-height: 850px;
+  min-height: 900px;
   max-height: 1200px;
   
   
@@ -2150,7 +2129,7 @@ transition: 1.5s;
   
   .int5{
     height: 100%;
-    max-height:150%;
+    min-height: 900px;
   }
 
 
@@ -2206,7 +2185,7 @@ transition: 1.5s;
   font-size: 15px;
 }
 .int5 p b span{
-  text-transform: none;
+
   font-size: 24px;
 }
 
@@ -2216,7 +2195,7 @@ transition: 1.5s;
 
   .int5{
     height: 100%;
-    max-height:150%;
+    min-height: 900px;
   }
 
 
@@ -2279,7 +2258,7 @@ transition: 1.5s;
   font-size: 13px;
 }
 .int5 p b span{
-  text-transform: none;
+
   font-size: 20px;
 }
 }
@@ -2288,7 +2267,7 @@ transition: 1.5s;
   
   .int5{
     height: 100%;
-    max-height:150%;
+    min-height: 900px;
   }
 
 
@@ -2330,7 +2309,7 @@ transition: 1.5s;
 }
 
 .int5 .nome{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .int5 p{
@@ -2338,7 +2317,7 @@ transition: 1.5s;
   color: white;  
   padding-top: 4%; 
   padding-bottom: 3%;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   width: 90%;
   line-height: 19px;
@@ -2349,7 +2328,8 @@ transition: 1.5s;
 
 .int5 p span{
   text-transform: none;
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 22px;
 }
 .int5 p b span{
  
@@ -2358,10 +2338,10 @@ transition: 1.5s;
   font-size: 16px;
 }
 }
-@media(max-width: 374px ){
+@media(max-width: 425px ){
   .int5{
     height: 100%;
-    max-height:150%;
+    min-height: 900px;
   }
 
 
@@ -2429,7 +2409,8 @@ transition: 1.5s;
   
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
+  padding-bottom: 15%;
 }
 
 }
@@ -2500,31 +2481,7 @@ transition: 1.5s;
   
   }
 
-  .int6 .card1.visible{
-    transform: rotate3d(0, 1, 0, 360deg);
-    transition: 1s;
-  }
-  
-  
-  .int6 .card2.visible{
-    transform: rotate3d(0, 5, 0, 360deg);
-    transition: 1s;
-  }
-  
-  .int6 .card3.visible{
-    transform: rotate3d(0, 5, 0, 360deg);
-    transition: 1s;
-  }
-  .int6 .card4.visible{
-    transform: rotate3d(0, 1, 0, 360deg);
-    transition: 1s;
-  }
-  
-  
-  .int6 .card5.visible{
-    transform: rotate3d(0, 5, 0, 360deg);
-    transition: 1s;
-  }
+ 
 
 
   @media(max-width: 1700px ){
@@ -2894,14 +2851,14 @@ background-blend-mode: screen;
  
  .flip-card {
    
-   background-color: transparent;
-   width: 100%;
-   height: 200px;
-   perspective: 1000px;
-   margin: 1%;
-   min-width: 200px;
- max-width: 230px;
-   transition: .5s ease-in-out;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+  margin: 1%;
+  min-width: 200px;
+  max-width: 230px;
+  transition: .5s ease-in-out;
    
   
  
@@ -2953,6 +2910,8 @@ background-blend-mode: screen;
   margin: 1%;
   transition: .5s ease-in-out;
 }
+
+
  .flip-card h4 {
    
    max-width: 300px; 
@@ -3336,6 +3295,7 @@ background-blend-mode: screen;
     }
 }
 
+
 @media (max-width:425px){
   .box-button{
     margin-bottom: 18%;
@@ -3348,6 +3308,62 @@ background-blend-mode: screen;
     font-size: 16px;
   }
 }
+
+@media(min-width: 1080px ){
+  .card3.visible{
+    transform: rotate3d(0, 5, 0, 360deg);
+    transition: 1s;
+  }
+  }
+  @media(min-width: 768px ){
+     .int2 .card1.visible{
+      transform: rotate3d(0, 1, 0, 360deg);
+      transition: 1s;
+    }
+      .int2 .card2.visible{
+      transform: rotate3d(0, 5, 0, 360deg);
+      transition: 1s;
+    }
+
+    .int4 .card1.visible{
+      transform: rotate3d(0, 1, 0, 360deg);
+      transition: 1s;
+    }
+    
+    
+    .int4 .card2.visible{
+      transform: rotate3d(0, 5, 0, 360deg);
+      transition: 1s;
+    }
+    
+
+    .int6 .card1.visible{
+      transform: rotate3d(0, 1, 0, 360deg);
+      transition: 1s;
+    }
+    
+    
+    .int6 .card2.visible{
+      transform: rotate3d(0, 5, 0, 360deg);
+      transition: 1s;
+    }
+    
+    .int6 .card3.visible{
+      transform: rotate3d(0, 5, 0, 360deg);
+      transition: 1s;
+    }
+    .int6 .card4.visible{
+      transform: rotate3d(0, 1, 0, 360deg);
+      transition: 1s;
+    }
+    
+    
+    .int6 .card5.visible{
+      transform: rotate3d(0, 5, 0, 360deg);
+      transition: 1s;
+    }
+  }
+
 
 a:link {
   text-decoration: none;
