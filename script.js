@@ -141,13 +141,16 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelector('.card1').onclick =function toggleElements() {
   var card1f = document.querySelector(".card1 .flip-card-front h4");
   var card1b = document.querySelector(".card1 .flip-card-back h4");
+  
 
   if (card1f.style.display === "none") {
     card1f.style.display = "block";
     card1b.style.display = "none";
+    
   } else {
     card1f.style.display = "none";
     card1b.style.display = "block";
+    
   }
 }
 document.querySelector('.card2').onclick =function toggleElements() {

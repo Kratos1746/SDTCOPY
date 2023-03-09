@@ -81,6 +81,8 @@ html::-webkit-scrollbar-track{
   background-clip: text;
   color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-image: url('img/Cattura.PNG');
@@ -99,6 +101,8 @@ html::-webkit-scrollbar-track{
   h1 span {
   background: rgb(255, 255, 255);
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   }
   
@@ -116,6 +120,8 @@ html::-webkit-scrollbar-track{
   font-weight: 600;
   line-height: 42px;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
   background-image: url('img/Cattura.PNG');
@@ -135,6 +141,8 @@ html::-webkit-scrollbar-track{
   p span {
   background: rgb(255, 255, 255);
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   }
   
@@ -326,6 +334,8 @@ html::-webkit-scrollbar-track{
         background-size: cover;
         background: #003264;
         -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
         opacity: 0;
       }
@@ -342,12 +352,13 @@ html::-webkit-scrollbar-track{
         text-align: left;
         font-size: 20px;
         font-weight: 600;
-        background-size: cover;
         line-height: 30px;
-        background-attachment: fixed;
-        background: #003264;-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-repeat: no-repeat;
+        background: #003264;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent; 
+        background-size: cover;
         
       }
 
@@ -520,7 +531,7 @@ html::-webkit-scrollbar-track{
         }
         
         .int1 .pspan {
-          font-size: 14px;
+          font-size: 13px;
           line-height: 20px;
         }
       }
@@ -554,6 +565,8 @@ html::-webkit-scrollbar-track{
   background-size: cover;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   opacity: 0;
         
@@ -572,12 +585,14 @@ html::-webkit-scrollbar-track{
   padding-top: 5%;
   padding-bottom: 8%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0 auto;
   background-size: cover;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent; 
   opacity: 0;     
         
@@ -771,6 +786,8 @@ transition: 2s;
   z-index: 1000;
   background-size: cover;
       -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
       -webkit-text-fill-color: transparent;
       background-attachment: fixed;
       background-image: url('img/flip.PNG');
@@ -783,6 +800,8 @@ transition: 2s;
   background: #ffffff;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1072,7 +1091,7 @@ z-index: 1000;
   }
 
   #pint2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
   }
   .outer-wrapper {
@@ -1120,6 +1139,8 @@ z-index: 1000;
     
     background: rgb(255, 255, 255);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent; 
   }
 
@@ -1134,6 +1155,8 @@ z-index: 1000;
   line-height: 50px;  
   padding-top: 4%; 
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-image: url('img/Cattura.PNG');
@@ -1164,6 +1187,8 @@ z-index: 1000;
   background-size: cover;
   background: #0b5daf;
         -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     opacity: 0;
  
@@ -1180,6 +1205,8 @@ z-index: 1000;
   background: #ffffff;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
@@ -1267,6 +1294,8 @@ iframe{
     
     background: rgb(255, 255, 255);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent; 
   }
 
@@ -1282,6 +1311,8 @@ iframe{
   line-height: 50px;  
   padding-top: 4%; 
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-image: url('img/Cattura.PNG');
@@ -1311,6 +1342,8 @@ iframe{
   font-size: 20px;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
     background-color: #003264;
     opacity: 0;
@@ -1328,6 +1361,8 @@ iframe{
   background: #ffffff;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
 }
 }
@@ -1337,6 +1372,8 @@ iframe{
     
     background: rgb(255, 255, 255);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent; 
   }
 
@@ -1352,6 +1389,8 @@ iframe{
   line-height: 40px;  
   padding-top: 4%; 
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-image: url('img/Cattura.PNG');
@@ -1381,6 +1420,8 @@ iframe{
   font-size: 16px;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
     background-color: #003264;
     opacity: 0;
@@ -1398,6 +1439,8 @@ iframe{
   background: #ffffff;
   font-weight: 600;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
 }
 }
@@ -1439,6 +1482,8 @@ iframe{
   line-height: 50px;   
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 
 }
@@ -1449,6 +1494,8 @@ iframe{
   opacity: 0;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1466,6 +1513,8 @@ transition: 1.5s;
   opacity: 0;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1482,6 +1531,8 @@ transition: 1.5s;
   opacity: 0;
   background: #000000;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1496,6 +1547,8 @@ transition: 1.5s;
   background: #000000;
   font-size: 1px;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1516,6 +1569,8 @@ transition: 1.5s;
   font-weight: 900;
   background: #2b67a3;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1579,6 +1634,8 @@ transition: 1.5s;
   max-width: 300px;
   background: #2b67a3;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   z-index: 1000;
 }
@@ -1682,6 +1739,8 @@ transition: 1.5s;
   
   background: linear-gradient(48deg, rgba(92,117,226,1) 2%, rgba(6,110,159,1) 8%, rgba(1,87,140,1) 20%, rgba(186,223,255,1) 35%, rgba(255,255,255,1) 49%, rgba(54,120,182,1) 60%, rgba(25,105,182,1) 74%, rgba(144,199,255,1) 84%, rgba(0,46,92,1) 93%);
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent; 
 }
 */
@@ -1884,6 +1943,8 @@ transition: 1.5s;
     line-height: 40px;   
     background: #003264;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
   
   }
@@ -1894,6 +1955,8 @@ transition: 1.5s;
   opacity: 0;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1911,6 +1974,8 @@ transition: 1.5s;
   opacity: 0;
   background: #003264;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1927,6 +1992,8 @@ transition: 1.5s;
   opacity: 0;
   background: #000000;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1941,6 +2008,8 @@ transition: 1.5s;
   background: #000000;
   font-size: 1px;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1961,6 +2030,8 @@ transition: 1.5s;
     font-weight: 900;
     background: #2b67a3;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
   }
 
@@ -1992,6 +2063,8 @@ transition: 1.5s;
     background: rgb(163,209,255);
     background: linear-gradient(48deg, rgba(163,209,255,1) 0%, rgba(2,110,219,1) 18%, rgba(78,133,189,1) 34%, rgba(93,174,255,1) 50%, rgba(36,120,204,1) 64%, rgba(1,85,168,1) 83%, rgba(38,147,255,1) 93%);
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent; 
     font-weight: 700;
     text-transform: uppercase;
@@ -2039,6 +2112,8 @@ transition: 1.5s;
   background-size: cover;
   background: #0b5daf;
         -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     opacity: 0;
  
@@ -2063,6 +2138,8 @@ transition: 1.5s;
   background-size: cover;
   background: #0b5daf;
         -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     
     
@@ -2081,6 +2158,8 @@ transition: 1.5s;
 .int5 h6 span{
   background: #ffffff;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
@@ -2088,6 +2167,8 @@ transition: 1.5s;
   background-size: cover;
         background: #0b5daf;
         -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
   line-height: 32px;  
   padding-top: 4%; 
@@ -2496,7 +2577,7 @@ transition: 1.5s;
      position: relative;
      margin: 0 auto;
      width: 100%;
-     max-width: 900px;
+     max-width: 1250px;
      
    
    
@@ -2963,9 +3044,24 @@ background-blend-mode: screen;
   height: 500px;
   transition: 0.5s ease-in-out;
   position: relative;
-  margin: auto;
   width: 100%;
   max-width: 900px;
+  
+
+
+ }
+ .int4 .box-scroll {
+   
+  position: relative;
+  display: inline-block;
+  justify-content: right;
+  padding: 10px;
+  height: 500px;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0;
   
 
 
@@ -3131,6 +3227,8 @@ background-blend-mode: screen;
 .grad h1 span{
     background-color: #ffffff;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 
   }
@@ -3140,6 +3238,8 @@ background-blend-mode: screen;
   .grad p span{
     background-color: #ffffff;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
   }
   
@@ -3147,6 +3247,8 @@ background-blend-mode: screen;
   .grad h3 span{
     background-color: #000000;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 
   }
@@ -3154,6 +3256,8 @@ background-blend-mode: screen;
   .grad .pspan span{
     background-color: #000000;
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
   }
 
@@ -3299,6 +3403,7 @@ background-blend-mode: screen;
 @media (max-width:425px){
   .box-button{
     margin-bottom: 18%;
+    margin-top: 0;
   }
   .bottone{
     width: 250px;
