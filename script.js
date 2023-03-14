@@ -33,13 +33,7 @@ scroll.addEventListener("mousemove", (e) => {
 	scroll.scrollLeft = scrollLeft - scrolling;
 });
 
-var cards = document.querySelectorAll('.flip-card');
 
-[...cards].forEach((card)=>{
-  card.addEventListener( 'click', function() {
-    card.classList.toggle('active');
-  });
-});
 
 window.onload = function() {
 	var logo = document.querySelector('.logo');
@@ -71,7 +65,188 @@ const observer = new IntersectionObserver((entries, observer) => {
 	});
   });
   
+  var Slider = (function() {
+  var initSlider = function() {
+      var dir = $("html").attr("dir");
+      var swipeHandler = new Hammer(document.getElementById("slider"));
+      swipeHandler.on('swipeleft', function(e) {
+          if (dir == "rtl")
+              $(".arrow-left").trigger("click");
+          else
+              $(".arrow-right").trigger("click");
+      });
+
+      swipeHandler.on('swiperight', function(e) {
+          if (dir == "rtl")
+              $(".arrow-right").trigger("click");
+          else
+              $(".arrow-left").trigger("click");
+      });
+
+      $(".arrow-right , .arrow-left").click(function(event) {
+          var nextActiveSlide = $(".slide.active").next();
+
+          if ($(this).hasClass("arrow-left"))
+              nextActiveSlide = $(".slide.active").prev();
+
+          if (nextActiveSlide.length > 0) {
+              var nextActiveIndex = nextActiveSlide.index();
+              $(".dots span").removeClass("active");
+              $($(".dots").children()[nextActiveIndex]).addClass("active");
+
+              updateSlides(nextActiveSlide);
+          }
+      });
+
+      $(".dots span").click(function(event) {
+          var slideIndex = $(this).index();
+          var nextActiveSlide = $($(".slider").children()[slideIndex]);
+          $(".dots span").removeClass("active");
+          $(this).addClass("active");
+
+          updateSlides(nextActiveSlide);
+      });
+
+      var updateSlides = function(nextActiveSlide) {
+          var nextActiveSlideIndex = $(nextActiveSlide).index();
+
+          $(".slide").removeClass("prev-1");
+          $(".slide").removeClass("next-1");
+          $(".slide").removeClass("active");
+          $(".slide").removeClass("prev-2");
+          $(".slide").removeClass("next-2");
+
+          nextActiveSlide.addClass("active");
+
+          nextActiveSlide.prev().addClass("prev-1");
+          nextActiveSlide.prev().prev().addClass("prev-2");
+          nextActiveSlide.addClass("active");
+          nextActiveSlide.next().addClass("next-1");
+          nextActiveSlide.next().next().addClass("next-2");
+      }
+
+      var updateToNextSlide = function(nextActiveSlide)
+      {
+          
+      }
+  }
+  return {
+      init: function() {
+          initSlider();
+      }
+  }
+})();
+
+$(function() {
+  Slider.init();
+});
+
+var Slider3 = (function() {
+  var initSlider = function() {
+      var dir = $("html").attr("dir");
+      var swipeHandler = new Hammer(document.getElementById("slider3"));
+      swipeHandler.on('swipeleft', function(e) {
+          if (dir == "rtl")
+              $(".arrow-left3").trigger("click");
+          else
+              $(".arrow-right3").trigger("click");
+      });
+
+      swipeHandler.on('swiperight', function(e) {
+          if (dir == "rtl")
+              $(".arrow-right3").trigger("click");
+          else
+              $(".arrow-left3").trigger("click");
+      });
+
+      $(".arrow-right3 , .arrow-left3").click(function(event) {
+          var nextActiveSlide = $(".slide3.active").next();
+
+          if ($(this).hasClass("arrow-left3"))
+              nextActiveSlide = $(".slide3.active").prev();
+
+          if (nextActiveSlide.length > 0) {
+              var nextActiveIndex = nextActiveSlide.index();
+              $(".dots3 span").removeClass("active");
+              $($(".dots3").children()[nextActiveIndex]).addClass("active");
+
+              updateSlides(nextActiveSlide);
+          }
+      });
+
+      $(".dots3 span").click(function(event) {
+          var slideIndex = $(this).index();
+          var nextActiveSlide = $($(".slider3").children()[slideIndex]);
+          $(".dots3 span").removeClass("active");
+          $(this).addClass("active");
+
+          updateSlides(nextActiveSlide);
+      });
+
+      var updateSlides = function(nextActiveSlide) {
+          var nextActiveSlideIndex = $(nextActiveSlide).index();
+
+          $(".slide3").removeClass("prev-13");
+          $(".slide3").removeClass("next-13");
+          $(".slide3").removeClass("active");
+          $(".slide3").removeClass("prev-23");
+          $(".slide3").removeClass("next-23");
+
+          nextActiveSlide.addClass("active");
+
+          nextActiveSlide.prev().addClass("prev-13");
+          nextActiveSlide.prev().prev().addClass("prev-23");
+          nextActiveSlide.addClass("active");
+          nextActiveSlide.next().addClass("next-13");
+          nextActiveSlide.next().next().addClass("next-23");
+      }
+
+      var updateToNextSlide = function(nextActiveSlide)
+      {
+          
+      }
+  }
+  return {
+      init: function() {
+          initSlider();
+      }
+  }
+})();
+
+$(function() {
+  Slider3.init();
+});
+
+
+
+
+var cards = document.querySelectorAll('.flip-card');
+
+[...cards].forEach((card)=>{
+card.addEventListener( 'click', function() {
+  card.classList.toggle('active');
+});
+});
+  
   /* Aggiungi l'observer all'elemento che vuoi animare */
+  var int4 = document.querySelector('.int4 h3 span');
+  observer.observe(int4);
+  var sin = document.querySelector('.int4 #sin');
+  observer.observe(sin);
+  var des = document.querySelector('.int4 #des');
+  observer.observe(des);
+  var nero = document.querySelector('.int4 h3 #nero');
+  observer.observe(nero);
+  var int5 = document.querySelector('.int5 h3');
+  observer.observe(int5);
+  var nome = document.querySelector('.int5 .nome');
+  observer.observe(nome);
+  var int56 = document.querySelector('.int5 #sdt');
+  observer.observe(int56);
+  var int5p1 = document.querySelector(' #p1');
+  observer.observe(int5p1);
+  var int5p2 = document.querySelector(' #p2');
+  observer.observe(int5p2);
   var int1 = document.querySelector('.int1 h3');
   observer.observe(int1);
   var pspan = document.querySelector('.int1 .pspan');
@@ -94,6 +269,8 @@ const observer = new IntersectionObserver((entries, observer) => {
   observer.observe(int3);
   var pint3 = document.querySelector('.int3 p');
   observer.observe(pint3);
+  var video = document.querySelector('.int3 .box-video');
+  observer.observe(video);
   var boxscroll4 = document.querySelector('.int4 .scroll');
   observer.observe(boxscroll4);
   var card14 = document.querySelector('.int4 .card1');
@@ -102,6 +279,8 @@ const observer = new IntersectionObserver((entries, observer) => {
   observer.observe(card24);
   var card34 = document.querySelector('.int4 .card3');
   observer.observe(card34);
+  var slider = document.querySelector('.slider-container');
+  observer.observe(slider);
   var boxscroll6 = document.querySelector('.int6 .scroll');
   observer.observe(boxscroll6);
   var card16 = document.querySelector('.int6 .card1');
@@ -114,43 +293,29 @@ const observer = new IntersectionObserver((entries, observer) => {
   observer.observe(card46);
   var card56 = document.querySelector('.int6 .card5');
   observer.observe(card56);
-  var video = document.querySelector('.int3 .box-video');
-  observer.observe(video);
-  var int4 = document.querySelector('.int4 h3 span');
-  observer.observe(int4);
-  var sin = document.querySelector('.int4 #sin');
-  observer.observe(sin);
-  var des = document.querySelector('.int4 #des');
-  observer.observe(des);
-  var nero = document.querySelector('.int4 h3 #nero');
-  observer.observe(nero);
-  var int5 = document.querySelector('.int5 h3');
-  observer.observe(int5);
-  var nome = document.querySelector('.int5 .nome');
-  observer.observe(nome);
-  var int56 = document.querySelector('.int5 #sdt');
-  observer.observe(int56);
-  var int5p1 = document.querySelector(' #p1');
-  observer.observe(int5p1);
-  var int5p2 = document.querySelector(' #p2');
-  observer.observe(int5p2);
-
   
-	
+  
+  
+
+
 	
 document.querySelector('.card1').onclick =function toggleElements() {
   var card1f = document.querySelector(".card1 .flip-card-front h4");
   var card1b = document.querySelector(".card1 .flip-card-back h4");
+
+  
+
   
 
   if (card1f.style.display === "none") {
     card1f.style.display = "block";
     card1b.style.display = "none";
     
+    
   } else {
     card1f.style.display = "none";
     card1b.style.display = "block";
-    
+   
   }
 }
 document.querySelector('.card2').onclick =function toggleElements() {
@@ -276,3 +441,5 @@ document.querySelector('.int6 .card5').onclick =function toggleElements() {
      card56b.style.display = "block";
   }
 }
+
+
