@@ -228,77 +228,7 @@ card.addEventListener( 'click', function() {
 });
 });
   
-  /* Aggiungi l'observer all'elemento che vuoi animare */
-  var int4 = document.querySelector('.int4 h3 span');
-  observer.observe(int4);
-  var sin = document.querySelector('.int4 #sin');
-  observer.observe(sin);
-  var des = document.querySelector('.int4 #des');
-  observer.observe(des);
-  var nero = document.querySelector('.int4 h3 #nero');
-  observer.observe(nero);
-  var int5 = document.querySelector('.int5 h3');
-  observer.observe(int5);
-  var nome = document.querySelector('.int5 .nome');
-  observer.observe(nome);
-  var int56 = document.querySelector('.int5 #sdt');
-  observer.observe(int56);
-  var int5p1 = document.querySelector(' #p1');
-  observer.observe(int5p1);
-  var int5p2 = document.querySelector(' #p2');
-  observer.observe(int5p2);
-  var int1 = document.querySelector('.int1 h3');
-  observer.observe(int1);
-  var pspan = document.querySelector('.int1 .pspan');
-  observer.observe(pspan);
-  var black = document.querySelector('.scroll-down-black');
-  observer.observe(black);
-  var int2 = document.querySelector('.int2 h3');
-  observer.observe(int2);
-  var pint2 = document.querySelector('.int2 #pint2');
-  observer.observe(pint2);
-  var boxscroll = document.querySelector('.int2 .scroll');
-  observer.observe(boxscroll);
-  var card12 = document.querySelector('.int2 .card1');
-  observer.observe(card12);
-  var card22 = document.querySelector('.int2 .card2');
-  observer.observe(card22);
-  var card32 = document.querySelector('.int2 .card3');
-  observer.observe(card32);
-  var int3 = document.querySelector('.int3');
-  observer.observe(int3);
-  var pint3 = document.querySelector('.int3 p');
-  observer.observe(pint3);
-  var video = document.querySelector('.int3 .box-video');
-  observer.observe(video);
-  var boxscroll4 = document.querySelector('.int4 .scroll');
-  observer.observe(boxscroll4);
-  var card14 = document.querySelector('.int4 .card1');
-  observer.observe(card14);
-  var card24 = document.querySelector('.int4 .card2');
-  observer.observe(card24);
-  var card34 = document.querySelector('.int4 .card3');
-  observer.observe(card34);
-  var slider = document.querySelector('.slider-container');
-  observer.observe(slider);
-  var boxscroll6 = document.querySelector('.int6 .scroll');
-  observer.observe(boxscroll6);
-  var card16 = document.querySelector('.int6 .card1');
-  observer.observe(card16);
-  var card26 = document.querySelector('.int6 .card2');
-  observer.observe(card26);
-  var card36 = document.querySelector('.int6 .card3');
-  observer.observe(card36);
-  var card46 = document.querySelector('.int6 .card4');
-  observer.observe(card46);
-  var card56 = document.querySelector('.int6 .card5');
-  observer.observe(card56);
-  
-  
-  
 
-
-	
 document.querySelector('.card1').onclick =function toggleElements() {
   var card1f = document.querySelector(".card1 .flip-card-front h4");
   var card1b = document.querySelector(".card1 .flip-card-back h4");
@@ -441,5 +371,78 @@ document.querySelector('.int6 .card5').onclick =function toggleElements() {
      card56b.style.display = "block";
   }
 }
+
+  /* Aggiungi l'observer all'elemento che vuoi animare */
+  var int4 = document.querySelector('.int4 h3 span');
+  observer.observe(int4);
+  var sin = document.querySelector('.int4 #sin');
+  observer.observe(sin);
+  var des = document.querySelector('.int4 #des');
+  observer.observe(des);
+  var nero = document.querySelector('.int4 h3 #nero');
+  observer.observe(nero);
+  var int5 = document.querySelector('.int5 h3');
+  observer.observe(int5);
+  var nome = document.querySelector('.int5 .nome');
+  observer.observe(nome);
+  var int56 = document.querySelector('.int5 #sdt');
+  observer.observe(int56);
+  var int5p1 = document.querySelector(' #p1');
+  observer.observe(int5p1);
+  var int5p2 = document.querySelector(' #p2');
+  observer.observe(int5p2);
+  var int1 = document.querySelector('.int1 h3');
+  observer.observe(int1);
+  var pspan = document.querySelector('.int1 .pspan');
+  observer.observe(pspan);
+  var black = document.querySelector('.scroll-down-black');
+  observer.observe(black);
+  var int2 = document.querySelector('.int2 h3');
+  observer.observe(int2);
+  var pint2 = document.querySelector('.int2 #pint2');
+  observer.observe(pint2);
+  var boxscroll = document.querySelector('.int2 .scroll');
+  observer.observe(boxscroll);
+  var card12 = document.querySelector('.int2 .card1');
+  observer.observe(card12);
+  var card22 = document.querySelector('.int2 .card2');
+  observer.observe(card22);
+  var card32 = document.querySelector('.int2 .card3');
+  observer.observe(card32);
+  var int3 = document.querySelector('.int3');
+  observer.observe(int3);
+  var pint3 = document.querySelector('.int3 p');
+  observer.observe(pint3);
+  var video0 = document.querySelector('.int3 .box-video');
+  observer.observe(video0);
+  var boxscroll4 = document.querySelector('.int4 .scroll');
+  observer.observe(boxscroll4);
+  var card14 = document.querySelector('.int4 .card1');
+  observer.observe(card14);
+  var card24 = document.querySelector('.int4 .card2');
+  observer.observe(card24);
+  var card34 = document.querySelector('.int4 .card3');
+  observer.observe(card34);
+  var slider = document.querySelector('.slider-container');
+  observer.observe(slider);
+  var boxscroll6 = document.querySelector('.int6 .scroll');
+  observer.observe(boxscroll6);
+  var card16 = document.querySelector('.int6 .card1');
+  observer.observe(card16);
+  var card26 = document.querySelector('.int6 .card2');
+  observer.observe(card26);
+  var card36 = document.querySelector('.int6 .card3');
+  observer.observe(card36);
+  var card46 = document.querySelector('.int6 .card4');
+  observer.observe(card46);
+  var card56 = document.querySelector('.int6 .card5');
+  observer.observe(card56);
+  
+  
+  
+
+
+	
+
 
 
