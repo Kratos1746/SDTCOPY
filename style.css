@@ -73,12 +73,12 @@ html::-webkit-scrollbar-track{
   .bg h1 {
     position: relative;
     left: 100%;
-  color: white;
+  color: #0b5daf;
   font-weight: 700;
   font-size: 65px;
   line-height: 1.2;
   position: relative;
-   background-clip: text;
+  /* background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@ html::-webkit-scrollbar-track{
     background-image: url('img/Cattura.PNG');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     opacity: 0;
   }
 
@@ -113,11 +113,11 @@ html::-webkit-scrollbar-track{
   .box-sottotitolo p {
   position: relative;
   left: 100%;
-  color: white;
+  color: #0b5daf;
   font-size: 25px;
   font-weight: 600;
   line-height: 42px;
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
   background-image: url('img/Cattura.PNG');
@@ -125,7 +125,7 @@ html::-webkit-scrollbar-track{
   background-size: cover;
   background-position: center;
   background-clip: text;
-  color: transparent;
+  color: transparent;*/
   opacity: 0;
   }
 
@@ -1197,13 +1197,13 @@ z-index: 1000;
   position: relative;
   top: -20%;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #0b5daf;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 50px;  
   padding-top: 4%; 
-  -webkit-background-clip: text;
+ /* -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
     -webkit-text-fill-color: transparent;
@@ -1211,7 +1211,7 @@ z-index: 1000;
     background-image: url('img/Cattura.PNG');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     opacity: 0;
 }
 
