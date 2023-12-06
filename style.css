@@ -1078,6 +1078,20 @@ video{
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
+
+    video{
+      width: 30%;
+      height: 60%;
+      margin-right: 3%;
+      background: rgba(4, 48, 105, 0.479);
+    }
+
+    .slider-container3 .dots3 {
+      margin-top: 0%;
+    }
+    .slider-container3 {
+      height: 400px;
+    }
   }
 
   @media (max-width: 580px) {
