@@ -213,9 +213,6 @@ var Slider3 = (function() {
   }
 })();
 
-$(function() {
-  Slider3.init();
-});
 
 
 
